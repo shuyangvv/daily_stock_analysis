@@ -54,10 +54,11 @@ class MarketStrategyBlueprint:
 CN_BLUEPRINT = MarketStrategyBlueprint(
     region="cn",
     title="A股市场三段式复盘策略",
-    positioning="聚焦指数趋势、资金博弈与板块轮动，形成次日交易计划。",
+    positioning="聚焦指数趋势、资金博弈与板块轮动，形成次日交易计划（默认偏低风险、以本金安全为先）。",
     principles=[
         "先看指数方向，再看量能结构，最后看板块持续性。",
         "结论必须映射到仓位、节奏与风险控制动作。",
+        "默认风险偏好：稳健/保守；优先规避高波动与高杠杆情形，强调分散与回撤控制。",
         "判断使用当日数据与近3日新闻，不臆测未验证信息。",
     ],
     dimensions=[
